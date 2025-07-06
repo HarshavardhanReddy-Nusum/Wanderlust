@@ -52,7 +52,7 @@ store.on("error", () => {
 
 const sessionOptions = {
     store,
-    secret: dbUrl,
+    secret: process.env.SECRET,
     resave: false,
     saveUninitialized: true,
     cookie: {
