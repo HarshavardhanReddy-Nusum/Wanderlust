@@ -62,11 +62,6 @@ const sessionOptions = {
     },
 };
 
-
-// app.get("/", (req, res) => {
-//     res.send("This is the root.");
-// })
-
 app.use(session(sessionOptions));
 app.use(flash());
 
